@@ -5,7 +5,11 @@ updates:
     directory: "/"
     schedule:
       interval: weekly
-    open-pull-requests-limit: 10
+    open-pull-requests-limit: 3
+    groups:
+      npm-dependencies:
+        patterns:
+          - "*"
     commit-message:
       prefix: "build(deps)"
       prefix-development: "build(deps-dev)"
@@ -15,7 +19,11 @@ updates:
     directory: "/"
     schedule:
       interval: weekly
-    open-pull-requests-limit: 10
+    open-pull-requests-limit: 1
+    groups:
+      actions:
+        patterns:
+          - "*"
     commit-message:
       prefix: "ci(deps)"
       prefix-development: "ci(deps-dev)"
@@ -25,7 +33,11 @@ updates:
     directory: "/"
     schedule:
       interval: weekly
-    open-pull-requests-limit: 10
+    open-pull-requests-limit: 1
+    groups:
+      devcontainers:
+        patterns:
+          - "*"
     commit-message:
       prefix: "build(deps)"
       prefix-development: "build(deps-dev)"
